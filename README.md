@@ -2,7 +2,7 @@
 Experimenting with `rpc` in Node.
 
 - [x] try out grpc
-- [ ] create HTTP2 server-client
+- [x] create HTTP2 server-client
 - [x] define protobuf schema
 - [ ] create protobuf / HTTP2 server-client
 - [ ] create protobuf / HTTP2 server-worker (RPC)
