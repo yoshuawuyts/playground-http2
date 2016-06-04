@@ -11,7 +11,7 @@ const messages = pbs(fs.readFileSync('./test.proto'))
 const opts = { key: serviceKey, cert: certificate }
 http.createServer(opts, function (req, res) {
   const decoder = messages.Test.decode(req)
-  decoder(function (msg, cb) {
+  decoder.payload(function (msg, cb) {
     console.log('msg', msg)
   })
   req.pipe(decoder)
